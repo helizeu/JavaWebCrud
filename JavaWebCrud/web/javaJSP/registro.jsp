@@ -1,6 +1,8 @@
 <%@page import="javaBeans.Usuario"%>
 <%  Usuario user = new Usuario(); // Instancia o objeto Usuario
-    if (!(user.statusSQL == null)) { out.println(user.statusSQL); }
+    if (!(user.statusSQL == null)) {
+        out.println(user.statusSQL);
+    }
 
     String oper = request.getParameter("oper");
     user.nome = request.getParameter("nome");
@@ -11,14 +13,31 @@
     String sHTML = "";
 
     if (oper.equals("gravar")) {
-        if (user.buscarEmail()) {  user.alterar();
+        if (user.buscarEmail()) {
+            user.alterar();
             sHTML = "<center>Usuário Alterado com Sucesso!<br>"
                     + "<a href = '../index.html'> Voltar </a></center>";
-        } else { user.incluir();
+        } else {
+            user.incluir();
             sHTML = "<center>Usuário incluido com Sucesso!<br>"
-                    + "<a href = '../index.html'> Voltar </a></center>"; }
-    } 
-    if (!(user.statusSQL == null))
-        out.println(user.statusSQL);
-    else { out.println(sHTML); }
+                    + "<a href = '../index.html'> Voltar </a></center>";
+        }
+    }
+
 %>
+<html lang = "pt-br">
+    <head>
+        <title> Registro de Usuários </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: greenyellow;" >
+        <%
+            if (!(user.statusSQL == null)) {
+                out.println(user.statusSQL);
+            } else {
+                out.println(sHTML);
+            }
+        %>
+    </body>
+</html>
