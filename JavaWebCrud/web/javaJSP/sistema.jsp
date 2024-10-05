@@ -14,20 +14,20 @@
     <div>
               <table >
                 <tr><td>
-                    <a href="../cadastro.html" ">
+                    <a href="../cadastro.jsp">
                         <img src="../javaIMG\cadastro.png" alt="Atualizar cadastro " height="100px" width="100px"></a>     
 
                 </td>
                 <td>&nbsp;&nbsp;&nbsp;</td>
                 <td>
-                    <a href="relatorio.jsp" ">
+                    <a href="relatorio.jsp">
                         <img src="../javaIMG\relatorio.jfif" alt="Listar Usuários " height="100px" width="100px"></a>
                    
                 </td>
             
                 <td>&nbsp;&nbsp;&nbsp;</td>
                 <td>
-                    <a href="../index.html" ">
+                    <a href="../index.html">
                         <img src="../javaIMG\saida.png" alt="Sair" height="100px" width="100px"></a>
                    
                 </td></tr>
