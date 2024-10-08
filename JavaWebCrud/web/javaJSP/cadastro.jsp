@@ -8,7 +8,7 @@
 <%@page import="javaBeans.Cliente"%>
 <%
     Cliente cli = new Cliente();
-    if (cli.statusSQL != null)
+    if ( cli.statusSQL == null )
     out.print("Tabela criada com sucesso");
     else
     out.print(cli.statusSQL);
