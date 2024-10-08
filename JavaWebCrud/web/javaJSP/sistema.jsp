@@ -14,7 +14,7 @@
     <div>
               <table >
                 <tr><td>
-                    <a href="../cadastro.jsp">
+                    <a href="../javaJSP/cadastro.jsp">
                         <img src="../javaIMG\cadastro.png" alt="Atualizar cadastro " height="100px" width="100px"></a>     
 
                 </td>
