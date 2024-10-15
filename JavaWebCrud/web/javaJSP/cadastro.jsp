@@ -1,20 +1,8 @@
 <%-- 
-    Document   : cadCliente
-    Created on : 8 de out. de 2024, 11:32:00
-    Author     : eliseu.lsilva2
+    Document   : cadastro.jsp
+    Created on : 15 de out. de 2024, 19:12:57
+    Author     : helli
 --%>
-
-
-<%@page import="javaBeans.Cliente"%>
-<%
-    Cliente cli = new Cliente();
-    if ( cli.statusSQL == null )
-    out.print("Tabela criada com sucesso");
-    else
-    out.print(cli.statusSQL);
-   
-   
-%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
